@@ -1,6 +1,6 @@
 export default function SobreNos() {
   return (
-    <section className="bg-auto shadow-2xl py-16 px-6 text-gray-800">
+    <section className="py-16 px-6 text-gray-800">
       <div className="max-w-full mx-auto text-center space-y-6">
         <p className="text-lg leading-relaxed">
           Na <span className="font-semibold">Lila Acessórios</span>, cada peça é cuidadosamente <span className="font-semibold">feita à mão</span>, garantindo exclusividade, beleza e significado.
