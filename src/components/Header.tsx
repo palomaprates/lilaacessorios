@@ -1,6 +1,7 @@
 import lilalogo from '../assets/lilalogo.png'
 import { useEffect, useState } from "react";
 import { cn } from '../utils';
+import LilaMenu from './LilaMenu';
 
 export default function Header()
 {
@@ -21,11 +22,13 @@ export default function Header()
         isScrolled ? 'bg-white shadow-md' : 'hover:bg-white hover:shadow-md bg-transparent'
       )}
     >
+        <LilaMenu />
       <div className="max-w-screen-xl mx-auto h-full flex items-center justify-center px-4 relative flex-col">
                     <img src={lilalogo} 
                     alt= "logo principal"
                     className='h-24 w-auto'/>
                             </div>
+
         </header>
     )
 }
