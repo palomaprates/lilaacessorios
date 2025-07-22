@@ -1,19 +1,7 @@
 import lilalogo from "../assets/lilalogo.png";
-import { useEffect, useState } from "react";
-import { cn } from "../utils";
 import LilaMenu from "./LilaMenu";
 
 export default function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50 h-auto transition-all duration-300 px-4 py-2 grid grid-cols-3 md:grid-cols-[1fr_3fr]">
       <div className="md:hidden flex">
