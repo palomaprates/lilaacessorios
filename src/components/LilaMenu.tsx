@@ -1,31 +1,5 @@
-// type NavbarProps = {
-//   scrollToSobre: () => void;
-//   scrollToLocalizacao: () => void;
-//   scrollToProdutos: () => void;
-// };
-
-// export default function Navbar({ scrollToSobre, scrollToLocalizacao, scrollToProdutos }: NavbarProps) {
-//     const commonClasses =
-//     "cursor-pointer transition-transform duration-150 ease-in-out transform hover:scale-105 active:scale-95 text-white hover:text-blacktext-lg leading-relaxed font-medium ";
-
-//   return (
-//     <nav className="w-full z-50 opacity-55" style={{ background: '#00A99D' }}>
-//       <div className="flex justify-center space-x-8 py-4 gap-40">
-//         <button onClick={scrollToSobre} className={commonClasses} >
-//           Sobre Nós
-//         </button>
-//         <button onClick={scrollToLocalizacao} className={commonClasses} >
-//           Localização
-//         </button>
-//         <button onClick={scrollToProdutos} className={commonClasses} >
-//           Produtos
-//         </button>
-//       </div>
-//     </nav>
-//   );
-// }
 import { IoMenu } from "react-icons/io5";
-
+import lilalogo from "../assets/lilalogo.png";
 import {
   Sheet,
   SheetContent,
@@ -33,35 +7,71 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet"
-import { useEffect, useState } from "react";
+} from "@/components/ui/sheet";
 
 export default function LilaMenu() {
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50); // muda quando rolar mais de 50px
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const commonClasses =
+    "cursor-pointer transition-transform duration-150 ease-in-out transform hover:scale-105 active:scale-95 text-black hover:text-blacktext-lg leading-relaxed font-medium";
 
   return (
-<Sheet>
-  <SheetTrigger> <IoMenu className={`transition-colors duration-300 w-6 h-6 ${
-        scrolled ? 'text-black' : 'text-white'
-      }`}/> </SheetTrigger>
-  <SheetContent side="left" className="w-[400px] sm:w-[540px]">
-    <SheetHeader>
-      <SheetTitle>Are you absolutely sure?</SheetTitle>
-      <SheetDescription>
-        This action cannot be undone. This will permanently delete your account
-        and remove your data from our servers.
-      </SheetDescription>
-    </SheetHeader>
-  </SheetContent>
-</Sheet>
+    <Sheet>
+      <SheetTrigger>
+        <IoMenu className="ml-4 flex justify-center cursor-pointer group-hover:text-black transition-colors duration-300 w-6 h-6 text-black" />
+      </SheetTrigger>
+      <SheetContent side="left" className="w-[400px] sm:w-[540px]">
+        <SheetHeader>
+          <SheetTitle>
+            {" "}
+            <div className="flex justify-center">
+              <img
+                src={lilalogo}
+                alt="logo principal"
+                className="h-18 w-auto"
+              />
+            </div>
+          </SheetTitle>
+          <SheetDescription>
+            <div className="flex-col flex justify-center gap-10 mt-10">
+              <button
+                onClick={() => {
+                  const section = document.getElementById("produtos");
+                  if (section) section.scrollIntoView({ behavior: "smooth" });
+                }}
+                className={commonClasses}
+              >
+                Produtos
+              </button>
+              <button
+                onClick={() => {
+                  const section = document.getElementById("sobre");
+                  if (section) section.scrollIntoView({ behavior: "smooth" });
+                }}
+                className={commonClasses}
+              >
+                Sobre Nós
+              </button>
+              <button
+                onClick={() => {
+                  const section = document.getElementById("localizacao");
+                  if (section) section.scrollIntoView({ behavior: "smooth" });
+                }}
+                className={commonClasses}
+              >
+                Localização
+              </button>
+              <button
+                onClick={() => {
+                  const section = document.getElementById("contacto");
+                  if (section) section.scrollIntoView({ behavior: "smooth" });
+                }}
+                className={commonClasses}
+              >
+                Contacto
+              </button>
+            </div>
+          </SheetDescription>
+        </SheetHeader>
+      </SheetContent>
+    </Sheet>
   );
 }
