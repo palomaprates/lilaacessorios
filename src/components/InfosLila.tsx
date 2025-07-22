@@ -88,8 +88,8 @@ function InfosLilaMobile() {
 }
 export default function InfosLila() {
   return (
-    <div className="flex-row mt-7 flex justify-between px-6">
-      <div className="md:flex hidden">
+    <div className="flex-row mt-7">
+      <div className="md:grid md:grid-cols-4 hidden">
         <div className="flex-col p-7 flex items-center gap-3 text-center">
           <CiFaceSmile className="h-10 w-auto" style={{ color: "#00A99D" }} />
           <p>
