@@ -8,14 +8,23 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { useState } from "react";
 
 export default function LilaMenu() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+    setIsOpen(false);
+  };
+
   const commonClasses =
     "cursor-pointer transition-transform duration-150 ease-in-out transform hover:scale-105 active:scale-95 text-black hover:text-blacktext-lg leading-relaxed font-medium";
 
   return (
-    <Sheet>
-      <SheetTrigger>
+    <Sheet open={isOpen} onOpenChange={setIsOpen}>
+      <SheetTrigger onClick={() => setIsOpen(true)}>
         <IoMenu className="ml-4 flex justify-center cursor-pointer group-hover:text-black transition-colors duration-300 w-6 h-6 text-black" />
       </SheetTrigger>
       <SheetContent side="left" className="w-[400px] sm:w-[540px]">
@@ -34,8 +43,7 @@ export default function LilaMenu() {
             <div className="flex-col flex justify-center gap-10 mt-10">
               <button
                 onClick={() => {
-                  const section = document.getElementById("produtos");
-                  if (section) section.scrollIntoView({ behavior: "smooth" });
+                  handleClick("produtos");
                 }}
                 className={commonClasses}
               >
@@ -43,8 +51,7 @@ export default function LilaMenu() {
               </button>
               <button
                 onClick={() => {
-                  const section = document.getElementById("sobre");
-                  if (section) section.scrollIntoView({ behavior: "smooth" });
+                  handleClick("sobre");
                 }}
                 className={commonClasses}
               >
@@ -52,8 +59,7 @@ export default function LilaMenu() {
               </button>
               <button
                 onClick={() => {
-                  const section = document.getElementById("localizacao");
-                  if (section) section.scrollIntoView({ behavior: "smooth" });
+                  handleClick("localizacao");
                 }}
                 className={commonClasses}
               >
@@ -61,8 +67,7 @@ export default function LilaMenu() {
               </button>
               <button
                 onClick={() => {
-                  const section = document.getElementById("contacto");
-                  if (section) section.scrollIntoView({ behavior: "smooth" });
+                  handleClick("contacto");
                 }}
                 className={commonClasses}
               >
