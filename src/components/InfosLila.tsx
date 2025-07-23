@@ -1,6 +1,5 @@
 import { CiFaceSmile } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
-// import { FaRegGem } from 'react-icons/fa';
 import { MdOutlinePlace } from "react-icons/md";
 import { IoDiamondOutline } from "react-icons/io5";
 import {
@@ -25,6 +24,7 @@ function InfosLilaMobile() {
 
     return () => clearInterval(interval);
   }, []);
+
   return (
     <Carousel
       opts={{
@@ -37,7 +37,6 @@ function InfosLilaMobile() {
     >
       <CarouselContent>
         <CarouselItem>
-          {" "}
           <div className="flex-col p-7 flex items-center gap-3 text-center h-full w-auto">
             <CiFaceSmile className="h-7 w-auto" style={{ color: "#00A99D" }} />
             <p>
@@ -55,7 +54,6 @@ function InfosLilaMobile() {
           </div>
         </CarouselItem>
         <CarouselItem>
-          {" "}
           <div className="flex-col p-7 flex items-center gap-3 text-center h-full w-auto">
             <IoDiamondOutline
               className="h-7 w-auto"
@@ -68,7 +66,6 @@ function InfosLilaMobile() {
           </div>
         </CarouselItem>
         <CarouselItem>
-          {" "}
           <div className="flex-col p-7 flex items-center gap-3 text-center h-full w-auto">
             <MdOutlinePlace
               className="h-7 w-auto"
