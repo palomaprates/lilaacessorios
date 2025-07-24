@@ -1,5 +1,4 @@
-// import anelsize from "../assets/anelsize.png";
-import pulseiratartaruga from "../assets/pulseiratartaruga.png";
+import anelsize from "../assets/anelsize.png";
 import stoantonio from "../assets/stoantonio.png";
 import cabedal from "../assets/cabedal.png";
 import pulseirasolho from "../assets/pulseirasolho.png";
@@ -13,8 +12,8 @@ export default function Products() {
       title: "cabedal",
     },
     {
-      image: pulseiratartaruga,
-      title: "Pulseira Tartaruga",
+      image: anelsize,
+      title: "Anel Size",
     },
   ];
   const products2 = [
@@ -29,32 +28,32 @@ export default function Products() {
   ];
   return (
     <div className="flex flex-col gap-2">
-      <div className="flex flex-row justify-center gap-2">
+      <div className="flex md:flex-row flex-col justify-center items-center gap-2">
         <img
           src={stoantonio}
           alt="Sto Antonio"
-          className="w-1/2 h-full object-cover"
+          className="md:w-1/2 md:h-full w-80 h-80 object-cover"
         />
         <div className="grid grid-cols-1 gap-2 justify-center md:grid-cols-2 md:flex md:flex-col">
           {products1.map((product, index) => (
-            <div key={index} className="overflow-hidden w-80 h-1/2">
+            <div key={index} className="overflow-hidden w-80 md:h-1/2">
               <img
                 src={product.image}
                 alt={product.title}
-                className="w-full h-6/5 object-cover"
+                className="md:w-full md:h-6/5 w-80 h-80 object-cover"
               />
             </div>
           ))}
         </div>
       </div>
-      <div className="flex flex-row justify-center gap-2">
+      <div className="flex md:flex-row flex-col justify-center items-center gap-2">
         <div className="grid grid-cols-1 gap-2 justify-center md:grid-cols-2 md:flex md:flex-col">
           {products2.map((product, index) => (
-            <div key={index} className="overflow-hidden w-80 h-1/2">
+            <div key={index} className="overflow-hidden md:w-80 md:h-1/2">
               <img
                 src={product.image}
                 alt={product.title}
-                className="w-full h-6/5 object-cover"
+                className="md:w-full md:h-6/5 w-80 h-80 object-cover"
               />
             </div>
           ))}
@@ -62,7 +61,7 @@ export default function Products() {
         <img
           src={colarconcha}
           alt="Colar Concha"
-          className="w-1/2 h-full object-cover"
+          className="md:w-1/2 md:h-full w-80 h-80 object-cover"
         />
       </div>
     </div>
