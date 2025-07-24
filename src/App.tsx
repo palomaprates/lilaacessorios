@@ -26,7 +26,21 @@ function App() {
           <div id="localizacao" className="flex justify-center">
             <LocLila />
           </div>
-          <div id="contacto" className="h-20 w-full bg-[#93c3cd]"></div>
+          <div
+            id="contacto"
+            className="h-20 w-full bg-[#93c3cd] flex flex-col pt-3"
+          >
+            <p
+              className="flex justify-center text-xl font-pacifico"
+              style={{ color: "#00A99D" }}
+            >
+              lila
+            </p>
+            <p className="flex justify-center text-xl font-medium text-white ">
+              Mais do que acessórios, oferecemos autenticidade e histórias que
+              tu carregas contigo.
+            </p>
+          </div>
           <LilaFooter />
         </div>
       </div>

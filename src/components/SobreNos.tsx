@@ -43,15 +43,6 @@ export default function SobreNos() {
             cultura portuguesa, representa elegância e herança.
           </p>
         </div>
-
-        {/* <p className="text-xl font-medium" style={{ color: "#00A99D" }}>
-          Mais do que acessórios, oferecemos autenticidade e histórias que tu
-          carregas contigo.
-        </p>
-
-        <p className="text-xl font-pacifico" style={{ color: "#00A99D" }}>
-          Bem-vindos à lila
-        </p> */}
       </div>
     </section>
   );
