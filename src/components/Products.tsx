@@ -36,11 +36,11 @@ export default function Products() {
         />
         <div className="grid grid-cols-1 gap-2 justify-center md:grid-cols-2 md:flex md:flex-col">
           {products1.map((product, index) => (
-            <div key={index} className="overflow-hidden w-80 md:h-1/2">
+            <div key={index} className="overflow-hidden w-80 md:h-100">
               <img
                 src={product.image}
                 alt={product.title}
-                className="md:w-full md:h-6/5 w-80 h-80 object-cover"
+                className="md:w-full md:h-full w-80 h-80 object-cover"
               />
             </div>
           ))}
@@ -49,11 +49,11 @@ export default function Products() {
       <div className="flex md:flex-row flex-col justify-center items-center gap-2">
         <div className="grid grid-cols-1 gap-2 justify-center md:grid-cols-2 md:flex md:flex-col">
           {products2.map((product, index) => (
-            <div key={index} className="overflow-hidden md:w-80 md:h-1/2">
+            <div key={index} className="overflow-hidden md:w-80 md:h-100">
               <img
                 src={product.image}
                 alt={product.title}
-                className="md:w-full md:h-6/5 w-80 h-80 object-cover"
+                className="md:w-full md:h-full w-80 h-80 object-cover"
               />
             </div>
           ))}
