@@ -72,7 +72,7 @@ export default function LocLila() {
               </p>
             </div>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d50947013.23684746!2d-9.390522!3d38.796745!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1edac01bdc52b7%3A0x627aa41a42a5d2f!2sR.%20Arco%20do%20Teixeira%202%2C%202710-623%20Sintra!5e0!3m2!1spt-PT!2spt!4v1753365099450!5m2!1spt-PT!2spt"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3109.5589133818808!2d-9.390521799999982!3d38.79674500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1edac01bdc52b7%3A0x627aa41a42a5d2f!2sR.%20Arco%20do%20Teixeira%202%2C%202710-623%20Sintra!5e0!3m2!1spt-PT!2spt!4v1753368528064!5m2!1spt-PT!2spt"
               width="600"
               height="450"
               loading="lazy"
@@ -97,7 +97,7 @@ export default function LocLila() {
               </p>
             </div>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d64557637.29213103!2d-70.12350705000003!3d9.037702113711237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1f270c0b121221%3A0xa483476e5b92a464!2sR.%205%20de%20Outubro%2019%2C%202655-255%20Ericeira!5e0!3m2!1spt-PT!2spt!4v1753365306150!5m2!1spt-PT!2spt"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.2167860223203!2d-9.420090423988604!3d38.96471764272913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1f270c0b121221%3A0xa483476e5b92a464!2sR.%205%20de%20Outubro%2019%2C%202655-255%20Ericeira!5e0!3m2!1spt-PT!2spt!4v1753697906833!5m2!1spt-PT!2spt"
               width="600"
               height="450"
               loading="lazy"
