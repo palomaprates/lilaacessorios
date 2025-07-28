@@ -19,12 +19,12 @@ function App() {
             <div id="produtos" className="flex gap-7 justify-center">
               <Products />
             </div>
+            <div id="localizacao" className="flex justify-center">
+              <LocLila />
+            </div>
             <div id="sobre" className="flex justify-center">
               <SobreNos />
             </div>
-          </div>
-          <div id="localizacao" className="flex justify-center">
-            <LocLila />
           </div>
           <div
             id="contacto"
