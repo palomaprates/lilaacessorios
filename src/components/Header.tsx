@@ -7,18 +7,18 @@ export default function Header() {
     if (section) section.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50 h-auto transition-all duration-300 px-4 py-2 grid grid-cols-3 md:grid-cols-[1fr_3fr]">
+    <header className="bg-white shadow-md fixed top-0 left-0 w-full z-50 h-auto transition-all duration-300 px-4 py-2 grid grid-cols-3 md:grid-cols-[1fr_4fr]">
       <div className="md:hidden flex">
         <LilaMenu />
       </div>
-      <div className="flex justify-center md:justify-start ml-10">
+      <div className="flex justify-center md:justify-start ml-4 w-16">
         <img
           src={lilalogo}
           alt="logo principal"
           className="object-contain h-16 w-auto"
         />
       </div>
-      <div className="pb-4 w-full z-[60] items-center flex justify-center text-black">
+      <div className="min-w-screen z-[60] items-center pr-32 flex justify-center text-black">
         <div className="max-w-[600px] mr-3 w-full justify-between hidden md:flex">
           <span
             onClick={() => handleClickMenu("produtos")}
