@@ -1,5 +1,7 @@
 
-[Lila Acessórios – Landing Page])(acessorioslila.pt)
+Lila Acessórios – Landing Page
+
+[You can access here](acessorioslila.pt)
 
 Landing page built with React + TypeScript, using Tailwind CSS for styling.
 
