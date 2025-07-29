@@ -28,7 +28,7 @@ function App() {
           </div>
           <div
             id="contacto"
-            className="h-20 w-full bg-[#93c3cd] flex flex-col pt-3"
+            className="w-full bg-[#93c3cd] flex flex-col p-3 text-center"
           >
             <p
               className="flex justify-center text-xl font-pacifico"
@@ -36,7 +36,7 @@ function App() {
             >
               lila
             </p>
-            <p className="flex justify-center text-xl font-medium text-white ">
+            <p className="flex justify-center text-sm sm:text-base md:text-xl font-medium text-white ">
               Mais do que acessórios, oferecemos autenticidade e histórias que
               tu carregas contigo.
             </p>

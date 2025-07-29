@@ -41,11 +41,11 @@ function LocLila() {
 export default function LilaFooter() {
   return (
     <footer className="bg-[#5e95a0] flex gap-7 flex-col text-gray-200 pt-6 w-full items-center">
-      <div className="grid grid-cols-3 max-w-[1300px] w-full">
+      <div className="grid sm:grid-cols-3 grid-cols-2 gap-4 w-screen">
         <LocLila />
-        <div className="flex text-sm flex-col gap-1 items-center">
-          <div className="flex gap-1 flex-col">
-            <p className="text-base font-bold -mb-1">Contactos</p>
+        <div className="px-4 h-auto w-full flex grid-cols-3 items-center text-sm flex-col">
+          <div className="flex flex-col gap-0.5">
+            <p className="text-base font-bold -mb-1 ">Contactos</p>
             <a
               href="https://www.instagram.com/lilaacessorios.shop/"
               target="_blank"
@@ -75,7 +75,7 @@ export default function LilaFooter() {
             </a>
           </div>
         </div>
-        <div className="flex text-sm flex-col items-center">
+        <div className="px-4 h-auto w-full flex grid-cols-3 items-center text-sm flex-col max-sm:hidden">
           <div className="flex flex-col gap-0.5">
             <p className="text-base font-bold -mb-1">Info</p>
             <span className="hover:text-white cursor-pointer">Sobre Nós</span>

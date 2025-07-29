@@ -5,6 +5,46 @@ import pulseirasolho from "../assets/pulseirasolho.png";
 import pulseirapeixe from "../assets/pulseirapeixe.png";
 import colarconcha from "../assets/colarconcha.png";
 
+type Product = {
+  image: string;
+  title: string;
+};
+
+function ImagesGrid({
+  products,
+  mainImage,
+  position,
+}: {
+  products: Product[];
+  mainImage: string;
+  position: "top" | "bottom";
+}) {
+  const mainImageClass =
+    "sm:w-1/2 sm:h-full w-full max-sm:aspect-square object-cover";
+
+  return (
+    <div className="flex sm:flex-row flex-col justify-center items-center gap-2">
+      {position === "top" && (
+        <img src={mainImage} alt="main" className={mainImageClass} />
+      )}
+      <div className="grid grid-cols-1 gap-2 justify-center sm:flex sm:flex-col">
+        {products.map((product, index) => (
+          <div key={index} className="overflow-hidden sm:w-80 sm:h-100">
+            <img
+              src={product.image}
+              alt={product.title}
+              className="sm:w-full sm:h-full w-full max-sm:aspect-square object-cover"
+            />
+          </div>
+        ))}
+      </div>
+      {position === "bottom" && (
+        <img src={mainImage} alt="main" className={mainImageClass} />
+      )}
+    </div>
+  );
+}
+
 export default function Products() {
   const products1 = [
     {
@@ -26,44 +66,15 @@ export default function Products() {
       title: "Pulseiras Olho",
     },
   ];
+
   return (
     <div className="flex flex-col gap-2">
-      <div className="flex md:flex-row flex-col justify-center items-center gap-2">
-        <img
-          src={stoantonio}
-          alt="Sto Antonio"
-          className="md:w-1/2 md:h-full w-80 h-80 object-cover"
-        />
-        <div className="grid grid-cols-1 gap-2 justify-center md:grid-cols-2 md:flex md:flex-col">
-          {products1.map((product, index) => (
-            <div key={index} className="overflow-hidden w-80 md:h-100">
-              <img
-                src={product.image}
-                alt={product.title}
-                className="md:w-full md:h-full w-80 h-80 object-cover"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="flex md:flex-row flex-col justify-center items-center gap-2">
-        <div className="grid grid-cols-1 gap-2 justify-center md:grid-cols-2 md:flex md:flex-col">
-          {products2.map((product, index) => (
-            <div key={index} className="overflow-hidden md:w-80 md:h-100">
-              <img
-                src={product.image}
-                alt={product.title}
-                className="md:w-full md:h-full w-80 h-80 object-cover"
-              />
-            </div>
-          ))}
-        </div>
-        <img
-          src={colarconcha}
-          alt="Colar Concha"
-          className="md:w-1/2 md:h-full w-80 h-80 object-cover"
-        />
-      </div>
+      <ImagesGrid products={products1} mainImage={stoantonio} position="top" />
+      <ImagesGrid
+        products={products2}
+        mainImage={colarconcha}
+        position="bottom"
+      />
     </div>
   );
 }

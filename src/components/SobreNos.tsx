@@ -7,7 +7,7 @@ export default function SobreNos() {
     <section className="py-16 md:px-16 text-gray-800">
       <div className=" w-full flex gap-5 flex-col justify-center">
         <div className="flex justify-center flex-cols"></div>
-        <div className="grid md:grid-cols-2 md:px-16 mx-10 md:gap-7 gap-1 shadow-md md:shadow-none">
+        <div className="grid md:grid-cols-2 md:px-16 mx-10 md:gap-7 gap-1">
           <img
             src={colarpeixeazul}
             alt="Colar Peixe Azul"
@@ -18,7 +18,7 @@ export default function SobreNos() {
             garantindo exclusividade, beleza e significado.
           </p>
         </div>
-        <div className="flex flex-col-reverse md:grid md:grid-cols-2 md:px-16 mx-10 md:gap-7 gap-1 shadow-md md:shadow-none">
+        <div className="flex flex-col-reverse md:grid md:grid-cols-2 md:px-16 mx-10 md:gap-7 gap-1">
           <p className="text-xl leading-relaxed flex wrap-normal items-center">
             Os nossos produtos são resistentes à água, perfeitos para quem vive
             intensamente — seja na praia, piscina ou no dia-a-dia.
@@ -30,7 +30,7 @@ export default function SobreNos() {
           />
         </div>
 
-        <div className="grid md:grid-cols-2 md:px-16 mx-10 gap-1 md-gap-7 shadow-md md:shadow-none">
+        <div className="grid md:grid-cols-2 md:px-16 mx-10 gap-1 md-gap-7">
           <img
             src={coracaovianalila}
             alt="Colar Peixe Azul"

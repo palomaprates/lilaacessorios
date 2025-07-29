@@ -11,7 +11,7 @@ export default function Header() {
       <div className="md:hidden flex">
         <LilaMenu />
       </div>
-      <div className="flex justify-center md:justify-start ml-4 w-16">
+      <div className="flex justify-center md:justify-start md:w-16">
         <img
           src={lilalogo}
           alt="logo principal"
