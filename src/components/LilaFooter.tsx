@@ -71,7 +71,7 @@ export default function LilaFooter() {
               className="hover:text-green-900 transition flex items-center gap-1"
             >
               <FaWhatsapp />
-              +351 920286832
+              +351 925 621 757
             </a>
           </div>
         </div>
