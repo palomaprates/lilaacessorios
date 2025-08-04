@@ -30,7 +30,7 @@ export default function SobreNos() {
           />
         </div>
 
-        <div className="grid md:grid-cols-2 md:px-16 mx-10 gap-1 md-gap-7">
+        <div className="grid md:grid-cols-2 md:px-16 mx-10 gap-1 md:gap-7">
           <img
             src={coracaovianalila}
             alt="Colar Peixe Azul"
